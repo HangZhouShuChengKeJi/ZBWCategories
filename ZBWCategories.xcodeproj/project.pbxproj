@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CFB28DC1221B98C4305CD5D /* libPods-ZBWCategories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E671321FCF5C3123E682EEEA /* libPods-ZBWCategories.a */; };
+		8C19C47221E34E710028AFB7 /* ZBWCategories.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C19C46F21E34E710028AFB7 /* ZBWCategories.h */; };
+		8C19C4A821E355B80028AFB7 /* NSString+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C47921E355B70028AFB7 /* NSString+ZBWAddition.m */; };
+		8C19C4A921E355B80028AFB7 /* NSObject+ZBWCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C47D21E355B70028AFB7 /* NSObject+ZBWCallback.m */; };
+		8C19C4AA21E355B80028AFB7 /* NSObject+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C47F21E355B70028AFB7 /* NSObject+NSCoding.m */; };
+		8C19C4AD21E355B80028AFB7 /* NSObject+ZBWCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C48621E355B70028AFB7 /* NSObject+ZBWCopy.m */; };
+		8C19C4AE21E355B80028AFB7 /* NSDictionary+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C48821E355B70028AFB7 /* NSDictionary+ZBWAddition.m */; };
+		8C19C4AF21E355B80028AFB7 /* NSTimer+ZBWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C48921E355B70028AFB7 /* NSTimer+ZBWWeakTimer.m */; };
+		8C19C4B021E355B80028AFB7 /* NSNumber+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C48A21E355B70028AFB7 /* NSNumber+ZBWAddition.m */; };
+		8C19C4B221E355B80028AFB7 /* NSSet+ZBWAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C48F21E355B70028AFB7 /* NSSet+ZBWAddtion.m */; };
+		8C19C4B321E355B80028AFB7 /* UIImageView+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C49421E355B70028AFB7 /* UIImageView+ZBWAddition.m */; };
+		8C19C4B421E355B80028AFB7 /* UIImagePickerController+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C49621E355B70028AFB7 /* UIImagePickerController+ZBWAddition.m */; };
+		8C19C4B521E355B80028AFB7 /* UIScrollView+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C49721E355B70028AFB7 /* UIScrollView+ZBWAddition.m */; };
+		8C19C4B621E355B80028AFB7 /* UIView+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C49B21E355B70028AFB7 /* UIView+ZBWAddition.m */; };
+		8C19C4B721E355B80028AFB7 /* UIAlertView+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C49D21E355B70028AFB7 /* UIAlertView+ZBWAddition.m */; };
+		8C19C4B921E355B80028AFB7 /* UIActionSheet+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C4A121E355B70028AFB7 /* UIActionSheet+ZBWAddition.m */; };
+		8C19C4BA21E355B80028AFB7 /* UIColor+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C4A321E355B70028AFB7 /* UIColor+ZBWAddition.m */; };
+		8C19C4BB21E355B80028AFB7 /* UIImage+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C4A421E355B70028AFB7 /* UIImage+ZBWAddition.m */; };
+		8C19C4BC21E355B80028AFB7 /* UIButton+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C19C4A521E355B70028AFB7 /* UIButton+ZBWAddition.m */; };
+		8C47D5452356F4C900CBAE5F /* UIApplication+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C47D5442356F4C900CBAE5F /* UIApplication+ZBWAddition.m */; };
+		8C608F1622BFBC65002F4714 /* NSData+ZBWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C608F1522BFBC65002F4714 /* NSData+ZBWAddition.m */; };
+		8CFF869E21E6E05B002E5479 /* NSObject+ZBWCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF869A21E6E05B002E5479 /* NSObject+ZBWCell.m */; };
+		8CFF869F21E6E05B002E5479 /* NSObject+ZBWNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF869D21E6E05B002E5479 /* NSObject+ZBWNotification.m */; };
+		8CFF86A221E6E16C002E5479 /* NSURLProtocol+WebKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF86A121E6E16C002E5479 /* NSURLProtocol+WebKitSupport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C19C46A21E34E710028AFB7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8C19C47221E34E710028AFB7 /* ZBWCategories.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7DF06D3E5F3FC57A0A8F376E /* Pods-ZBWCategories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBWCategories.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZBWCategories/Pods-ZBWCategories.release.xcconfig"; sourceTree = "<group>"; };
+		8C19C46C21E34E710028AFB7 /* libZBWCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZBWCategories.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C19C46F21E34E710028AFB7 /* ZBWCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWCategories.h; sourceTree = "<group>"; };
+		8C19C47921E355B70028AFB7 /* NSString+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C47B21E355B70028AFB7 /* NSSet+ZBWAddtion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+ZBWAddtion.h"; sourceTree = "<group>"; };
+		8C19C47D21E355B70028AFB7 /* NSObject+ZBWCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZBWCallback.m"; sourceTree = "<group>"; };
+		8C19C47E21E355B70028AFB7 /* NSObject+ZBWCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZBWCopy.h"; sourceTree = "<group>"; };
+		8C19C47F21E355B70028AFB7 /* NSObject+NSCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSCoding.m"; sourceTree = "<group>"; };
+		8C19C48121E355B70028AFB7 /* NSObject_Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_Utility.h; sourceTree = "<group>"; };
+		8C19C48421E355B70028AFB7 /* NSObject+ZBWCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZBWCallback.h"; sourceTree = "<group>"; };
+		8C19C48521E355B70028AFB7 /* NSObject+NSCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSCoding.h"; sourceTree = "<group>"; };
+		8C19C48621E355B70028AFB7 /* NSObject+ZBWCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZBWCopy.m"; sourceTree = "<group>"; };
+		8C19C48821E355B70028AFB7 /* NSDictionary+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C48921E355B70028AFB7 /* NSTimer+ZBWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+ZBWWeakTimer.m"; sourceTree = "<group>"; };
+		8C19C48A21E355B70028AFB7 /* NSNumber+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C48B21E355B70028AFB7 /* NSString+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C48C21E355B70028AFB7 /* Foundation+ZBWCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+ZBWCategory.h"; sourceTree = "<group>"; };
+		8C19C48E21E355B70028AFB7 /* NSDictionary+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C48F21E355B70028AFB7 /* NSSet+ZBWAddtion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+ZBWAddtion.m"; sourceTree = "<group>"; };
+		8C19C49021E355B70028AFB7 /* NSNumber+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C49121E355B70028AFB7 /* NSTimer+ZBWWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+ZBWWeakTimer.h"; sourceTree = "<group>"; };
+		8C19C49321E355B70028AFB7 /* UIKit+ZBWCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+ZBWCategory.h"; sourceTree = "<group>"; };
+		8C19C49421E355B70028AFB7 /* UIImageView+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C49521E355B70028AFB7 /* UIActionSheet+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C49621E355B70028AFB7 /* UIImagePickerController+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C49721E355B70028AFB7 /* UIScrollView+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C49921E355B70028AFB7 /* UIImage+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C49A21E355B70028AFB7 /* UIColor+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C49B21E355B70028AFB7 /* UIView+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C49C21E355B70028AFB7 /* UIButton+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C49D21E355B70028AFB7 /* UIAlertView+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C49F21E355B70028AFB7 /* UIScrollView+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C4A021E355B70028AFB7 /* UIImagePickerController+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C4A121E355B70028AFB7 /* UIActionSheet+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C4A221E355B70028AFB7 /* UIImageView+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C4A321E355B70028AFB7 /* UIColor+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C4A421E355B70028AFB7 /* UIImage+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C4A521E355B70028AFB7 /* UIButton+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C19C4A621E355B70028AFB7 /* UIView+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C19C4A721E355B70028AFB7 /* UIAlertView+ZBWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C47D5432356F4C900CBAE5F /* UIApplication+ZBWAddition.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; fileEncoding = 4; path = "UIApplication+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C47D5442356F4C900CBAE5F /* UIApplication+ZBWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ZBWAddition.m"; sourceTree = "<group>"; };
+		8C608F1422BFBC65002F4714 /* NSData+ZBWAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ZBWAddition.h"; sourceTree = "<group>"; };
+		8C608F1522BFBC65002F4714 /* NSData+ZBWAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZBWAddition.m"; sourceTree = "<group>"; };
+		8CFF869A21E6E05B002E5479 /* NSObject+ZBWCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZBWCell.m"; sourceTree = "<group>"; };
+		8CFF869B21E6E05B002E5479 /* NSObject+ZBWNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZBWNotification.h"; sourceTree = "<group>"; };
+		8CFF869C21E6E05B002E5479 /* NSObject+ZBWCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZBWCell.h"; sourceTree = "<group>"; };
+		8CFF869D21E6E05B002E5479 /* NSObject+ZBWNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZBWNotification.m"; sourceTree = "<group>"; };
+		8CFF86A021E6E16C002E5479 /* NSURLProtocol+WebKitSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLProtocol+WebKitSupport.h"; sourceTree = "<group>"; };
+		8CFF86A121E6E16C002E5479 /* NSURLProtocol+WebKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLProtocol+WebKitSupport.m"; sourceTree = "<group>"; };
+		B8D6E02C3EBA1598F2257915 /* Pods-ZBWCategories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBWCategories.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZBWCategories/Pods-ZBWCategories.debug.xcconfig"; sourceTree = "<group>"; };
+		E671321FCF5C3123E682EEEA /* libPods-ZBWCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZBWCategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C19C46921E34E710028AFB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CFB28DC1221B98C4305CD5D /* libPods-ZBWCategories.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BC9ACDD20DEB5371A92D3FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E671321FCF5C3123E682EEEA /* libPods-ZBWCategories.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52C2816A521B959A61FAAB62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8D6E02C3EBA1598F2257915 /* Pods-ZBWCategories.debug.xcconfig */,
+				7DF06D3E5F3FC57A0A8F376E /* Pods-ZBWCategories.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C19C46321E34E710028AFB7 = {
+			isa = PBXGroup;
+			children = (
+				8C19C46E21E34E710028AFB7 /* ZBWCategories */,
+				8C19C46D21E34E710028AFB7 /* Products */,
+				52C2816A521B959A61FAAB62 /* Pods */,
+				2BC9ACDD20DEB5371A92D3FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C19C46D21E34E710028AFB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C19C46C21E34E710028AFB7 /* libZBWCategories.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C19C46E21E34E710028AFB7 /* ZBWCategories */ = {
+			isa = PBXGroup;
+			children = (
+				8C19C47821E355B70028AFB7 /* NSFoundation+ZBWCategory */,
+				8C19C49221E355B70028AFB7 /* UIKit+ZBWCategory */,
+				8C19C46F21E34E710028AFB7 /* ZBWCategories.h */,
+			);
+			path = ZBWCategories;
+			sourceTree = "<group>";
+		};
+		8C19C47821E355B70028AFB7 /* NSFoundation+ZBWCategory */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF86A021E6E16C002E5479 /* NSURLProtocol+WebKitSupport.h */,
+				8CFF86A121E6E16C002E5479 /* NSURLProtocol+WebKitSupport.m */,
+				8C19C47921E355B70028AFB7 /* NSString+ZBWAddition.m */,
+				8C19C47B21E355B70028AFB7 /* NSSet+ZBWAddtion.h */,
+				8C19C47C21E355B70028AFB7 /* NSObject+ZBWCategory */,
+				8C19C48821E355B70028AFB7 /* NSDictionary+ZBWAddition.m */,
+				8C19C48921E355B70028AFB7 /* NSTimer+ZBWWeakTimer.m */,
+				8C19C48A21E355B70028AFB7 /* NSNumber+ZBWAddition.m */,
+				8C19C48B21E355B70028AFB7 /* NSString+ZBWAddition.h */,
+				8C19C48C21E355B70028AFB7 /* Foundation+ZBWCategory.h */,
+				8C19C48E21E355B70028AFB7 /* NSDictionary+ZBWAddition.h */,
+				8C19C48F21E355B70028AFB7 /* NSSet+ZBWAddtion.m */,
+				8C19C49021E355B70028AFB7 /* NSNumber+ZBWAddition.h */,
+				8C19C49121E355B70028AFB7 /* NSTimer+ZBWWeakTimer.h */,
+				8C608F1422BFBC65002F4714 /* NSData+ZBWAddition.h */,
+				8C608F1522BFBC65002F4714 /* NSData+ZBWAddition.m */,
+			);
+			path = "NSFoundation+ZBWCategory";
+			sourceTree = "<group>";
+		};
+		8C19C47C21E355B70028AFB7 /* NSObject+ZBWCategory */ = {
+			isa = PBXGroup;
+			children = (
+				8CFF869C21E6E05B002E5479 /* NSObject+ZBWCell.h */,
+				8CFF869A21E6E05B002E5479 /* NSObject+ZBWCell.m */,
+				8CFF869B21E6E05B002E5479 /* NSObject+ZBWNotification.h */,
+				8CFF869D21E6E05B002E5479 /* NSObject+ZBWNotification.m */,
+				8C19C47D21E355B70028AFB7 /* NSObject+ZBWCallback.m */,
+				8C19C47E21E355B70028AFB7 /* NSObject+ZBWCopy.h */,
+				8C19C47F21E355B70028AFB7 /* NSObject+NSCoding.m */,
+				8C19C48121E355B70028AFB7 /* NSObject_Utility.h */,
+				8C19C48421E355B70028AFB7 /* NSObject+ZBWCallback.h */,
+				8C19C48521E355B70028AFB7 /* NSObject+NSCoding.h */,
+				8C19C48621E355B70028AFB7 /* NSObject+ZBWCopy.m */,
+			);
+			path = "NSObject+ZBWCategory";
+			sourceTree = "<group>";
+		};
+		8C19C49221E355B70028AFB7 /* UIKit+ZBWCategory */ = {
+			isa = PBXGroup;
+			children = (
+				8C19C49521E355B70028AFB7 /* UIActionSheet+ZBWAddition.h */,
+				8C19C4A121E355B70028AFB7 /* UIActionSheet+ZBWAddition.m */,
+				8C19C4A721E355B70028AFB7 /* UIAlertView+ZBWAddition.h */,
+				8C19C49D21E355B70028AFB7 /* UIAlertView+ZBWAddition.m */,
+				8C47D5432356F4C900CBAE5F /* UIApplication+ZBWAddition.h */,
+				8C47D5442356F4C900CBAE5F /* UIApplication+ZBWAddition.m */,
+				8C19C49C21E355B70028AFB7 /* UIButton+ZBWAddition.h */,
+				8C19C4A521E355B70028AFB7 /* UIButton+ZBWAddition.m */,
+				8C19C49A21E355B70028AFB7 /* UIColor+ZBWAddition.h */,
+				8C19C4A321E355B70028AFB7 /* UIColor+ZBWAddition.m */,
+				8C19C49921E355B70028AFB7 /* UIImage+ZBWAddition.h */,
+				8C19C4A421E355B70028AFB7 /* UIImage+ZBWAddition.m */,
+				8C19C4A021E355B70028AFB7 /* UIImagePickerController+ZBWAddition.h */,
+				8C19C49621E355B70028AFB7 /* UIImagePickerController+ZBWAddition.m */,
+				8C19C4A221E355B70028AFB7 /* UIImageView+ZBWAddition.h */,
+				8C19C49421E355B70028AFB7 /* UIImageView+ZBWAddition.m */,
+				8C19C49321E355B70028AFB7 /* UIKit+ZBWCategory.h */,
+				8C19C49F21E355B70028AFB7 /* UIScrollView+ZBWAddition.h */,
+				8C19C49721E355B70028AFB7 /* UIScrollView+ZBWAddition.m */,
+				8C19C4A621E355B70028AFB7 /* UIView+ZBWAddition.h */,
+				8C19C49B21E355B70028AFB7 /* UIView+ZBWAddition.m */,
+			);
+			path = "UIKit+ZBWCategory";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C19C46B21E34E710028AFB7 /* ZBWCategories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C19C47521E34E710028AFB7 /* Build configuration list for PBXNativeTarget "ZBWCategories" */;
+			buildPhases = (
+				FCFEC3CD7B52148B369B2AE8 /* [CP] Check Pods Manifest.lock */,
+				8C19C46821E34E710028AFB7 /* Sources */,
+				8C19C46921E34E710028AFB7 /* Frameworks */,
+				8C19C46A21E34E710028AFB7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBWCategories;
+			productName = ZBWCategories;
+			productReference = 8C19C46C21E34E710028AFB7 /* libZBWCategories.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C19C46421E34E710028AFB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "朱博文";
+				TargetAttributes = {
+					8C19C46B21E34E710028AFB7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C19C46721E34E710028AFB7 /* Build configuration list for PBXProject "ZBWCategories" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C19C46321E34E710028AFB7;
+			productRefGroup = 8C19C46D21E34E710028AFB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C19C46B21E34E710028AFB7 /* ZBWCategories */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FCFEC3CD7B52148B369B2AE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZBWCategories-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C19C46821E34E710028AFB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFF869F21E6E05B002E5479 /* NSObject+ZBWNotification.m in Sources */,
+				8C19C4BB21E355B80028AFB7 /* UIImage+ZBWAddition.m in Sources */,
+				8CFF869E21E6E05B002E5479 /* NSObject+ZBWCell.m in Sources */,
+				8C19C4B021E355B80028AFB7 /* NSNumber+ZBWAddition.m in Sources */,
+				8C608F1622BFBC65002F4714 /* NSData+ZBWAddition.m in Sources */,
+				8C19C4B621E355B80028AFB7 /* UIView+ZBWAddition.m in Sources */,
+				8C19C4B721E355B80028AFB7 /* UIAlertView+ZBWAddition.m in Sources */,
+				8C19C4A821E355B80028AFB7 /* NSString+ZBWAddition.m in Sources */,
+				8C47D5452356F4C900CBAE5F /* UIApplication+ZBWAddition.m in Sources */,
+				8C19C4B521E355B80028AFB7 /* UIScrollView+ZBWAddition.m in Sources */,
+				8C19C4B421E355B80028AFB7 /* UIImagePickerController+ZBWAddition.m in Sources */,
+				8C19C4BC21E355B80028AFB7 /* UIButton+ZBWAddition.m in Sources */,
+				8CFF86A221E6E16C002E5479 /* NSURLProtocol+WebKitSupport.m in Sources */,
+				8C19C4B221E355B80028AFB7 /* NSSet+ZBWAddtion.m in Sources */,
+				8C19C4AA21E355B80028AFB7 /* NSObject+NSCoding.m in Sources */,
+				8C19C4B321E355B80028AFB7 /* UIImageView+ZBWAddition.m in Sources */,
+				8C19C4AD21E355B80028AFB7 /* NSObject+ZBWCopy.m in Sources */,
+				8C19C4AE21E355B80028AFB7 /* NSDictionary+ZBWAddition.m in Sources */,
+				8C19C4AF21E355B80028AFB7 /* NSTimer+ZBWWeakTimer.m in Sources */,
+				8C19C4B921E355B80028AFB7 /* UIActionSheet+ZBWAddition.m in Sources */,
+				8C19C4A921E355B80028AFB7 /* NSObject+ZBWCallback.m in Sources */,
+				8C19C4BA21E355B80028AFB7 /* UIColor+ZBWAddition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8C19C47321E34E710028AFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C19C47421E34E710028AFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C19C47621E34E710028AFB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8D6E02C3EBA1598F2257915 /* Pods-ZBWCategories.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C19C47721E34E710028AFB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF06D3E5F3FC57A0A8F376E /* Pods-ZBWCategories.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C19C46721E34E710028AFB7 /* Build configuration list for PBXProject "ZBWCategories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C19C47321E34E710028AFB7 /* Debug */,
+				8C19C47421E34E710028AFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C19C47521E34E710028AFB7 /* Build configuration list for PBXNativeTarget "ZBWCategories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C19C47621E34E710028AFB7 /* Debug */,
+				8C19C47721E34E710028AFB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C19C46421E34E710028AFB7 /* Project object */;
+}
