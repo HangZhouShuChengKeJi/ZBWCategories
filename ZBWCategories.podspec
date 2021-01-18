@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "git@github.com:HangZhouShuChengKeJi/ZBWCategories.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/HangZhouShuChengKeJi/ZBWCategories.git", :tag => "#{s.version}" }
 
   s.source_files  = "ZBWCategories", "ZBWCategories/*.{h,m,mm}"
   # s.exclude_files = "Classes/Exclude"
