@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWCategories"
-  s.version      = "0.0.4"
+  s.version      = "0.1.7"
   s.summary      = "类别扩展类."
 
   # This description is used to generate tags and improve search results.
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "git@github.com:HangZhouShuChengKeJi/ZBWCategories.git", :tag => "0.0.4" }
+  s.source       = { :git => "git@github.com:HangZhouShuChengKeJi/ZBWCategories.git", :tag => "#{s.version}" }
 
   s.source_files  = "ZBWCategories", "ZBWCategories/*.{h,m,mm}"
   # s.exclude_files = "Classes/Exclude"
