@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
                     5、UIKit相关类扩展。包括UIImageView、UIButton、UIView等；
                    DESC
 
-  s.homepage     = "http://EXAMPLE/ZBWCategories"
+  s.homepage     = "https://github.com/HangZhouShuChengKeJi/ZBWCategories"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -47,11 +47,11 @@ Pod::Spec.new do |s|
   s.license      = "BSD"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
-  s.author             = { "bwzhu" => "409256557@qq.com" }
+  s.author             = { "bwzhu" => "bowen.zhu@91chengguo.com" }
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "git@gitlab.91chengguo.com:component-iOS/ZBWCategories.git", :tag => "0.0.4" }
+  s.source       = { :git => "git@github.com:HangZhouShuChengKeJi/ZBWCategories.git", :tag => "0.0.4" }
 
   s.source_files  = "ZBWCategories", "ZBWCategories/*.{h,m,mm}"
   # s.exclude_files = "Classes/Exclude"
