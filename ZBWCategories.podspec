@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint HHUIKit.podspec' to ensure this is a
+#  Be sure to run `pod spec lint ZBWCategories.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
                     各种常用类的类别扩展。
-                    1、NSObject JSON扩展；序列号+反序列化；
+                    1、NSObject JSON扩展；序列化+反序列化；
                     2、NSObject 自动归档+反序列化；
                     3、NSObject 深拷贝、浅拷贝；
                     4、其他常用类扩展；例如NSTimer等
