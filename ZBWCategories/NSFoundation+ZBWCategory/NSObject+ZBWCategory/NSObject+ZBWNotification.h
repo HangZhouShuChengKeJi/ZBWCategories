@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^ZBWNotificationBlock)(NSNotification * notification);
+typedef void (^ZBWNotificationBlock)(NSNotification * _Nonnull notification);
 
 /**********************************************************************************************************
  * 【NSObject (NSObject_ZBWNotification)】
@@ -18,13 +18,13 @@ typedef void (^ZBWNotificationBlock)(NSNotification * notification);
 @interface NSObject (NSObject_ZBWNotification)<NSMachPortDelegate>
 
 // 监听广播
-- (void)zbw_monitorNotification:(NSString *)name
-                      selector:(SEL)aSelector
-                        object:(id)object;
+- (void)zbw_monitorNotification:(NSString *_Nonnull)name
+                       selector:(SEL _Nonnull )aSelector
+                         object:(id _Nullable )object;
 
-- (void)zbw_monitorNotification:(NSString *)name
-                        object:(id)object
-                      callback:(ZBWNotificationBlock)callback;
+- (void)zbw_monitorNotification:(NSString *_Nonnull)name
+                         object:(id _Nonnull )object
+                       callback:(ZBWNotificationBlock _Nonnull )callback;
 
 // 取消监听
 - (void)zbw_cancelMonitorNotification;

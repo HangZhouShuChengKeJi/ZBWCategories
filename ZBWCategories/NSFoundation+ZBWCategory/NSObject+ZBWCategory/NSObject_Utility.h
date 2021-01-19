@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <ZBWJson.h>
+#import <ZBWJson/ZBWJson.h> 
 #import "NSObject+NSCoding.h"
 #import "NSObject+ZBWCopy.h"
 #import "NSObject+ZBWCallback.h"

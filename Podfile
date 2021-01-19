@@ -8,7 +8,7 @@ target 'ZBWCategories' do
 
   # Pods for ZBWCategories
 
-  pod 'SDWebImage/WebP', '~> 3.8.1'
+  pod 'SDWebImage'
   pod 'libwebp', '0.6.1'
   pod 'ZBWJson', '~> 0.0.7'
   # pod 'ZBWJson', :path => '../ZBWJson'

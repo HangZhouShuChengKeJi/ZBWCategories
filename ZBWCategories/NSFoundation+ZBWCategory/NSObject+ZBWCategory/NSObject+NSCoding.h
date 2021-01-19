@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+ZBWProperty.h"
+#import <ZBWJson/ZBWJson.h>
 
 /**
  *  使用runtime，遍历所有属性，对所有属性进行encode和decode。

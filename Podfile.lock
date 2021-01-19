@@ -1,0 +1,49 @@
+PODS:
+  - libwebp (0.6.1):
+    - libwebp/core (= 0.6.1)
+    - libwebp/dec (= 0.6.1)
+    - libwebp/demux (= 0.6.1)
+    - libwebp/dsp (= 0.6.1)
+    - libwebp/enc (= 0.6.1)
+    - libwebp/mux (= 0.6.1)
+    - libwebp/utils (= 0.6.1)
+    - libwebp/webp (= 0.6.1)
+  - libwebp/core (0.6.1):
+    - libwebp/webp
+  - libwebp/dec (0.6.1):
+    - libwebp/core
+  - libwebp/demux (0.6.1):
+    - libwebp/core
+  - libwebp/dsp (0.6.1):
+    - libwebp/core
+  - libwebp/enc (0.6.1):
+    - libwebp/core
+  - libwebp/mux (0.6.1):
+    - libwebp/core
+  - libwebp/utils (0.6.1):
+    - libwebp/core
+  - libwebp/webp (0.6.1)
+  - SDWebImage (5.6.1):
+    - SDWebImage/Core (= 5.6.1)
+  - SDWebImage/Core (5.6.1)
+  - ZBWJson (0.0.7)
+
+DEPENDENCIES:
+  - libwebp (= 0.6.1)
+  - SDWebImage
+  - ZBWJson (~> 0.0.7)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - libwebp
+    - SDWebImage
+    - ZBWJson
+
+SPEC CHECKSUMS:
+  libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
+  SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
+  ZBWJson: ae7f2d44877ea347c48d6714bfc4704129adedd4
+
+PODFILE CHECKSUM: 7f8d917d163844d92ea807686ecfe4e7b2f13b63
+
+COCOAPODS: 1.8.3

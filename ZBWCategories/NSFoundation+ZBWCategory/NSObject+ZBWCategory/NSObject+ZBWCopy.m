@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+ZBWCopy.h"
-#import "NSObject+ZBWProperty.h"
+#import <ZBWJson/ZBWJson.h>
 #import <UIKit/UIKit.h>
 
 @implementation NSObject (ZBWCopy)

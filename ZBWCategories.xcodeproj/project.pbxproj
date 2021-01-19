@@ -449,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8D6E02C3EBA1598F2257915 /* Pods-ZBWCategories.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7DF06D3E5F3FC57A0A8F376E /* Pods-ZBWCategories.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

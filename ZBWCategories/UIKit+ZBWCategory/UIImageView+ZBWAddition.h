@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <UIImageView+WebCache.h>
+#import <SDWebImage/SDWebImage.h>
 
 typedef void (^zbw_ImageTouched)(UIImageView *imageView);
 typedef void (^zbw_ImageDidLoadBlock)(UIImage *image, SDImageCacheType cacheType);

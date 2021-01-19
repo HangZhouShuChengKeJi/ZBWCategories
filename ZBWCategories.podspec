@@ -85,7 +85,7 @@ Pod::Spec.new do |s|
   # s.libraries = "iconv", "xml2"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.prefix_header_contents = '#import <ZBWCategories.h>'
+  # s.prefix_header_contents = '#import <ZBWCategories/ZBWCategories.h>'
 
   s.dependency 'SDWebImage'
   s.dependency 'ZBWJson'
