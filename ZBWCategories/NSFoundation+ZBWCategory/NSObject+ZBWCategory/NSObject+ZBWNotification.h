@@ -23,7 +23,7 @@ typedef void (^ZBWNotificationBlock)(NSNotification * _Nonnull notification);
                          object:(id _Nullable )object;
 
 - (void)zbw_monitorNotification:(NSString *_Nonnull)name
-                         object:(id _Nonnull )object
+                         object:(id _Nullable )object
                        callback:(ZBWNotificationBlock _Nonnull )callback;
 
 // 取消监听

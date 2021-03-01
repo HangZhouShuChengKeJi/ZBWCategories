@@ -8,7 +8,8 @@
 
 #import "UIImageView+ZBWAddition.h"
 #import <objc/runtime.h>
-#import <SDWebImage/SDWebImage.h>
+#import <SDWebImage/UIView+WebCache.h>
+#import <SDWebImage/UIImage+MultiFormat.h>
 
 const void *zbw_imageTouchedBlock_KEY = &zbw_imageTouchedBlock_KEY;
 const void *zbw_imageDidLoadBlock_KEY = &zbw_imageDidLoadBlock_KEY;
