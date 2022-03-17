@@ -27,6 +27,8 @@ typedef NS_ENUM(NSInteger, ZBWImageStatus) {
 
 @property (nonatomic, assign)ZBWImageStatus             zbw_status;
 
+@property (nonatomic) SDWebImageContext                 *zbw_sdWebImageContext; // context
+
 #pragma mark- 回调block
 @property (nonatomic, copy) zbw_ImageTouched            zbw_imageTouchedBlock;
 @property (nonatomic, copy) zbw_ImageDidLoadBlock       zbw_imageDidLoadBlock;
@@ -48,5 +50,11 @@ typedef NS_ENUM(NSInteger, ZBWImageStatus) {
 - (void)zbw_cancelLoad;
 
 - (void)zbw_fade;
+
+#pragma mark- SDWebImage
+/**
+ 设置默认的context
+ */
++ (void)zbw_setDefaultWebImageContext:(SDWebImageContext *)defaultContext;
 
 @end

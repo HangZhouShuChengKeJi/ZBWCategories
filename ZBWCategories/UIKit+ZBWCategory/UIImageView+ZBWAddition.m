@@ -19,9 +19,13 @@ const void *zbw_identify_KEY = &zbw_identify_KEY;
 const void *zbw_tapGesture_KEY = &zbw_tapGesture_KEY;
 
 const void *zbw_imageStatus_KEY = &zbw_imageStatus_KEY;
+const void *zbw_sdwebimageContext_KEY = &zbw_sdwebimageContext_KEY;
+
 //const void *zbw_ImageTouched_KEY = &zbw_ImageTouched_KEY;
 
 @implementation UIImageView (ZBWAddition)
+
+static SDWebImageContext    *zbw_defaultContext;
 
 #pragma mark- Getter Setter
 
@@ -117,6 +121,18 @@ const void *zbw_imageStatus_KEY = &zbw_imageStatus_KEY;
     objc_setAssociatedObject(self, zbw_tapGesture_KEY, tapGesture, OBJC_ASSOCIATION_RETAIN);
 }
 
+- (void)setZbw_sdWebImageContext:(SDWebImageContext *)zbw_sdWebImageContext {
+    objc_setAssociatedObject(self, zbw_sdwebimageContext_KEY, zbw_sdWebImageContext, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (SDWebImageContext *)zbw_sdWebImageContext {
+    SDWebImageContext *context = objc_getAssociatedObject(self, zbw_sdwebimageContext_KEY);
+    if (context) {
+        return context;
+    }
+    return zbw_defaultContext;
+}
+
 #pragma mark- UITapGestureRecognizer
 - (void)zbw_singlePressOccur:(UIGestureRecognizer *)gesture
 {
@@ -153,6 +169,7 @@ const void *zbw_imageStatus_KEY = &zbw_imageStatus_KEY;
     [self sd_setImageWithURL:[NSURL URLWithString:aUrl]
             placeholderImage:placeholderImage
                      options:SDWebImageAvoidAutoSetImage | SDWebImageRetryFailed
+                     context:self.zbw_sdWebImageContext
                     progress:nil
                    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                        //        ZBWImageLog(@"图片下载回调:{\nurl:%@\nimage:%@\nerror:%@\ncacheType:%ld\n}",imageURL,image,error,cacheType);
@@ -283,6 +300,11 @@ const void *zbw_imageStatus_KEY = &zbw_imageStatus_KEY;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     
     [layer addAnimation:animation forKey:@"fade"];
+}
+
+#pragma mark- SDWebImage
++ (void)zbw_setDefaultWebImageContext:(SDWebImageContext *)defaultContext {
+    zbw_defaultContext = defaultContext;
 }
 
 @end
