@@ -14,6 +14,36 @@
 
 - (id)zbw_shallowCopy
 {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
+    Class aClass = [self class];
+#pragma clang diagnostic pop
+    
+    if ([self isKindOfClass:[NSString class]]) {
+        return self;
+    } else if ([self isKindOfClass:[NSValue class]]) {
+        return self;
+    } else if ([self isKindOfClass:[UIResponder class]]) {
+        return nil;
+    } else if ([self isKindOfClass:[NSArray class]]) {
+        NSArray *arraySelf = (NSArray *)self;
+        NSMutableArray *copyArray = [NSMutableArray arrayWithArray:arraySelf];
+        
+        if ([arraySelf isKindOfClass:[NSMutableArray class]]) {
+            return copyArray;
+        } else {
+            return copyArray.copy;
+        }
+    } else if ([self isKindOfClass:[NSDictionary class]]) {
+        NSDictionary *dicSelf = (NSDictionary *)self;
+        NSMutableDictionary *copyDic = [NSMutableDictionary dictionaryWithDictionary:dicSelf];
+        if ([dicSelf isKindOfClass:[NSMutableDictionary class]]) {
+            return copyDic;
+        } else {
+            return copyDic.copy;
+        }
+    }
+    
     id copyObject = [[[self class] alloc] init];
     [[self.class zbwOP_propertyList] enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         ZBWProperty *property = obj;
@@ -30,18 +60,15 @@
 
 - (id)zbw_deepCopy
 {
-    id copyObject = [[[self class] alloc] init];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunused-variable"
     Class aClass = [self class];
 #pragma clang diagnostic pop
     
     if ([self isKindOfClass:[NSString class]]) {
-        copyObject = [(NSString *)self copy];
-        return copyObject;
+        return [(NSString *)self copy];
     } else if ([self isKindOfClass:[NSValue class]]) {
-        copyObject = [(NSValue *)self copy];
-        return copyObject;
+        return [(NSValue *)self copy];
     } else if ([self isKindOfClass:[UIResponder class]]) {
         return nil;
     } else if ([self isKindOfClass:[NSArray class]]) {
@@ -81,7 +108,9 @@
     
     
     // 如果出错了， 使用序列化+反序列化处理
+    id copyObject;
     @try {
+        copyObject = [[aClass alloc] init];
         [[self.class zbwOP_propertyList] enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             ZBWProperty *property = obj;
             if (property.isReadonly || property.isWeak) {
@@ -113,7 +142,7 @@
     } @catch (NSException *exception) {
         NSDictionary *dic = [self zbw_jsonObject];
         if (dic && [dic isKindOfClass:[NSDictionary class]]) {
-            [copyObject zbw_initWithJsonDic:dic];
+            copyObject = [[aClass alloc] zbw_initWithJsonDic:dic];
         }
     } @finally {
         
