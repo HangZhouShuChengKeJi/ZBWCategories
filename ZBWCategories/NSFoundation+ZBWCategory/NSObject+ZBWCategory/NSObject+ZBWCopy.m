@@ -66,7 +66,9 @@
 #pragma clang diagnostic pop
     
     if ([self isKindOfClass:[NSString class]]) {
-        return [(NSString *)self copy];
+        return self;
+//        线上偶尔出现异常 +[NSTaggedPointerString allocWithZone:]
+//        return [(NSString *)self copy];
     } else if ([self isKindOfClass:[NSValue class]]) {
         return [(NSValue *)self copy];
     } else if ([self isKindOfClass:[UIResponder class]]) {
