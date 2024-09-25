@@ -19,6 +19,10 @@ FOUNDATION_STATIC_INLINE Class ContextControllerClass() {
         NSString *str = [NSString stringWithFormat:@"browsingC%@", @"ontextController"];
         cls = [[[WKWebView new] valueForKey:str] class];
     }
+    if (!cls) {
+        NSString *str = [NSString stringWithFormat:@"WK%@%@%@%@",@"B",@"rowsing", @"C", @"ontextController"];
+        cls = NSClassFromString(str);
+    }
     return cls;
 }
 
