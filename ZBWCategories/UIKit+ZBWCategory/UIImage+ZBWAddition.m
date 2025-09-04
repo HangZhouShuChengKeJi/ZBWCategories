@@ -721,8 +721,18 @@ CGFloat RadiansToDegrees1(CGFloat radians) {return radians * 180/M_PI;};
 
 -(UIImage *)imageAtRect:(CGRect)rect
 {
-    CGImageRef imageRef = CGImageCreateWithImageInRect([self CGImage], rect);
-    UIImage* subImage = [UIImage imageWithCGImage: imageRef];
+    // 转换到像素坐标系
+    CGFloat scale = self.scale;
+    CGRect pixelRect = CGRectMake(rect.origin.x * scale,
+                                      rect.origin.y * scale,
+                                      rect.size.width * scale,
+                                      rect.size.height * scale);
+    CGImageRef imageRef = CGImageCreateWithImageInRect([self CGImage], pixelRect);
+    if (!imageRef) return nil;
+    // 生成 UIImage，保持 scale 和 orientation
+    UIImage *subImage = [UIImage imageWithCGImage:imageRef
+                                              scale:scale
+                                        orientation:self.imageOrientation];
     CGImageRelease(imageRef);
     
     return subImage;
